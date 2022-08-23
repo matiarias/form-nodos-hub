@@ -36,7 +36,7 @@ export const Formulario = () => {
       inputs.phone.trim() === "" ||
       inputs.relation.trim() === ""
     ) {
-      console.log("por favor completa tu nombre o apellido");
+      console.log("por favor completa el formulario");
       setValidation(true);
     } else {
       setValidation(false);
@@ -108,7 +108,7 @@ export const Formulario = () => {
                   />
                 </div>
 
-                {validation && (
+                {validation && inputs.name.length === 0 && (
                   <div className="alert alert-danger" role="alert">
                     Por favor ingresa tu nombre
                   </div>
@@ -131,7 +131,7 @@ export const Formulario = () => {
                   />
                 </div>
 
-                {validation && (
+                {validation && inputs.surname.length === 0 && (
                   <div className="alert alert-danger" role="alert">
                     Por favor ingresa tu apellido
                   </div>
@@ -153,7 +153,7 @@ export const Formulario = () => {
                   />
                 </div>
 
-                {validation && (
+                {validation && inputs.dni.length === 0 && (
                   <div className="alert alert-danger" role="alert">
                     Por favor ingresa tu numero de DNI
                   </div>
@@ -176,7 +176,7 @@ export const Formulario = () => {
                   />
                 </div>
 
-                {validation && (
+                {validation && inputs.email.length === 0 && (
                   <div className="alert alert-danger" role="alert">
                     Por favor ingresa tu mail
                   </div>
@@ -197,7 +197,7 @@ export const Formulario = () => {
                   />
                 </div>
 
-                {validation && (
+                {validation && inputs.phone.length === 0 && (
                   <div className="alert alert-danger" role="alert">
                     Por favor ingresa un telefono de contacto
                   </div>
@@ -225,7 +225,7 @@ export const Formulario = () => {
                   </select>
                 </div>
 
-                {validation && (
+                {validation && inputs.relation.length === 0 && (
                   <div className="alert alert-danger mt-2" role="alert">
                     Por favor ingresa una opción
                   </div>
