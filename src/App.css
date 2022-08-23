@@ -1,57 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&display=swap");
 
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
-}
-
-.form-nombre{
-  margin: 15px auto;
-  margin-bottom: 25px;
-}
-
-.form-apellido{
-  margin: 15px auto;
-  margin-bottom: 25px;
-}
-
-.form-dni{
-  margin: 15px auto;
-  margin-bottom: 25px;
-}
-
-.form-mail{
-  margin: 15px auto;
-  margin-bottom: 25px;
-}
-
-.form-telefono{
-  margin: 15px auto;
-  margin-bottom: 25px;
-}
-
-.form-relacion{
-  margin: 15px auto;
-  margin-bottom: 25px;
-}
-
-.g-recaptcha{
-  margin: 15px auto;
-  margin-bottom: 25px;
-}
-
-input[type="submit"]{
-  margin: 15px auto;
-  margin-bottom: 25px;
+  /* font-family: "Roboto Mono", monospace; */
+  font-family: "DynaPuff", cursive;
+  /* overflow: hidden; */
+  background: linear-gradient(120deg, #ec793b, #7fccd1);
 }
