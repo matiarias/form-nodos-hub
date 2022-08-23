@@ -147,7 +147,6 @@ export const Formulario = () => {
                     name="dni"
                     value={inputs.dni}
                     id="dni"
-                    maxLength="10"
                     placeholder="Ingresar sin puntos ó guiones"
                     onChange={handleInputChange}
                   />
@@ -188,11 +187,12 @@ export const Formulario = () => {
                   </label>
                   <input
                     className="form-control mb-2 w-50"
-                    maxLength="10"
-                    type="number"
+                    maxLength="20"
+                    type="tel"
                     name="phone"
                     value={inputs.phone}
                     id="telefono"
+                    placeholder="+5492641111111"
                     onChange={handleInputChange}
                   />
                 </div>
