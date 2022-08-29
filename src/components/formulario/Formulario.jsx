@@ -204,7 +204,7 @@ export const Formulario = () => {
                 )}
 
                 <div className="form-relacion">
-                  <label className="form-label" htmlFor="relacion">
+                  <label className="form-label" htmlFor="relation">
                     Relación con la institución
                   </label>
                   <select
@@ -212,7 +212,7 @@ export const Formulario = () => {
                     name="relation"
                     value={inputs.value}
                     id="relation"
-                    defaultValue={"default"}
+                    defaultValue="default"
                     onChange={handleInputChange}
                   >
                     <option value="default" disabled>
